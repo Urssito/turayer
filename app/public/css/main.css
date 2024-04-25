@@ -1,0 +1,23 @@
+body, html{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    margin: 0;overflow: hidden}
+body{position: fixed;overflow-y: scroll;}
+#app{height: 100%; width: 100%;}
+.columns-3{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    height: 100%;}
+.a-normalize{text-decoration: none;color: #000;}
+.a-normalize:hover{color: #000;text-decoration: none;}
+.underline:hover{text-decoration:underline}
+.hide{display: none;}
+.disabled{display: none !important}
+.disable-select {
+    -webkit-touch-callout: none;-webkit-user-select: none;
+    -khtml-user-select: none;-moz-user-select: none;
+    -ms-user-select: none;user-select: none;
+}
+.bg-light{}
+.bg-dark{}

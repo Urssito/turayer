@@ -1,0 +1,157 @@
+#notify-position{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+    top: 8px;
+    z-index: 10;
+}
+
+#notify{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+}
+
+#notify-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    border: 1px #888 solid;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#notify{
+    flex-direction: column;
+}
+
+#notify-content{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 5px 10px;
+}
+
+#notify-title{
+    font-weight:900;
+    font-size: 17.5px;
+}
+
+#notify-photo{
+    width: 25px;
+    border-radius: 50%;
+    margin: 0 8px 0 0;
+}
+
+#notify-body{
+    color: rgba(0,0,0,.8);
+}
+
+#notify-close{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#notify-close img{
+    cursor: pointer;
+    width: 20px;
+    fill: #000;
+}
+
+#notify-timing{
+    transform:translateY(-3px);
+    width: 0%;
+    height: 3px;
+    border-radius: 0 0 10px 10px;
+    background-color: #000;
+    animation: waiting 5s linear;
+}
+
+@keyframes waiting{
+    from{width: 100%;}
+    to{width: 0%;}
+}
+
+#new-notification-div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-notification{
+    width: 12px;
+    height: 12px;
+    border-radius: 9999px;
+    background-color: #c23;
+    font-size: 10px;
+    color: #fff;
+    position: relative;
+    top: -6px;
+    left: 14px;
+    outline: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #new-notification{
+        left: 7px;
+    }
+}
+
+/*    pagina    */
+
+.noti-card{
+    padding: 20px;
+    border-bottom: 1px solid #888;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.noti-card:hover{
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+.noti-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.noti-icon{
+    height: 100%;
+    width: 40px;
+}
+
+.noti-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 900;
+    width: 100%;
+}
+
+.noti-pic{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.noti-body{
+    margin-left: 40px;
+    width: 100%;
+}

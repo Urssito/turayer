@@ -1,0 +1,23 @@
+#signup-op-divisor{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signup-op-line{
+    width: 40%;
+    height: 1px;
+    border-bottom: .5px rgba(0, 0, 0, .5) solid;
+}
+
+#signup-op-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#signup-op-div button{
+    width: 50%;
+}

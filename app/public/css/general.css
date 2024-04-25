@@ -1,0 +1,135 @@
+#loading-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#loading{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    border-top: 4px solid #045dd1;
+    animation-name: girando;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes girando{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+#app{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#app-body-pos{
+    display: flex;
+    flex-direction: column;
+}
+
+#app-body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1300px;
+}
+
+.back-btn-div{
+}
+
+.back-btn{
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 8px;
+    background-color: transparent;
+    width: 34px;
+    height: 34px;
+}
+
+.back-btn:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.top-bar{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    flex-direction: row;
+    width: 100%;
+    max-width: 626px;
+    height: 57px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid #888;
+    background-color: #fff;
+}
+
+.top-bar-space{
+    height: 57px;
+}
+
+#bottom-bar-space{
+    height: 70px;
+    width: 100%;
+}
+
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 626px;
+}
+
+#content-pos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#center{
+    height: 100%;
+    width: 100%;
+    background-color: #fff !important;
+}
+
+#center .top-bar{
+}
+
+#center .mobile-top-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    padding: 10px 0;
+    width: 100%;
+    max-width: none;
+    border-bottom: 1px solid #888;
+    font-weight: bolder;
+    background-color: #fff;
+    z-index: 2;
+}
+
+#mobile-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: none;
+}
