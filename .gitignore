@@ -1,8 +1,5 @@
 node_modules/
 src/views
 src/helpers/updateSchemas
-ca_bundle.crt
-certificate.crt
-private.key
 app/public/build
 credentials.json
